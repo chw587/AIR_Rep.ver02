@@ -1,16 +1,15 @@
 @charset "UTF-8";
 :root {
     /* colors */
-    --color-white: #fafafa;
-    --color-black: #111;
-    --color-blue-dark: #2464AF;
-    --color-blue-light: #558ED5;
-    --color-green: #03B403;
-    --color-red: #D82929;
-    --color-glass-border: rgba(255, 255, 255, 0.2);
-    --color-glass-bg: rgba(255, 255, 255, 0.05);
-    --color-glass-inset-top: rgba(255, 255, 255, 0.4);
-    --color-glass-inset-bottom: rgba(255, 255, 255, 0.08);
+    --white: #fafafa;
+    --black: #111;
+    --blue-dark: #03045e;
+    --blue-light: #caf0f8;
+    --green: #2E7D32;
+    --red: #D32F2F;
+    --border:#ddd;
+
+    --text: #02173D;
 
     /* font-size */
     --fs-xs: 0.7vw;
@@ -19,8 +18,8 @@
     --fs-base: 1.1vw;
     --fs-lg: 1.3vw;
     --fs-xl: 1.5vw;
-    --fs-2xl: 3.5vw;
-    --fs-header: 1.5vw;
+    --fs-2xl: 2.5vw;
+    --fs-3xl: 3.5vw;
     --fs-icon: clamp(24px, 2.5vw, 40px);
 
     /* spacing */
@@ -33,7 +32,8 @@
     --gap-3xl: 40px;
 
     /* border-radius */
-    --radius-sm: 4px;
+    --radius-s: 4px;
+    --radius-sm: 8px;
     --radius-md: 20px;
     --radius-full: 999px;
 }
@@ -245,13 +245,12 @@ body {
     width: 100vw;
     height: 100vh;
     font-family: 'Pretendard', sans-serif;
-    font-size: 16px;
     color: var(--text);
 }
 
 table th,
 table td {
-    height: 40px;
+    height: 32px;
     font-weight: normal;
     text-align: center;
     align-content: center;
@@ -261,8 +260,8 @@ input,
 select {
     padding: 0;
     margin: 0;
-    border: 1px solid #ddd;
-    border-radius: 12px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
     box-sizing: border-box;
     vertical-align: middle;
 }
