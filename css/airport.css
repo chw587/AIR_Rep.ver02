@@ -112,6 +112,11 @@ body {
         'opsz' 24;
 }
 
+.content_info .fas {
+        color: #2196F3;
+}
+
+
 
 /* ============================================================
    layout
@@ -128,7 +133,7 @@ header {
 main {
     flex: 1;
     width: 100%;
-    padding: var(--gap-xl);
+    padding: var(--gap-2xl);
     padding-top: 0;
 }
 
@@ -387,8 +392,7 @@ main .main_wrap>* {
 
 .today_content .time_content .temp_info img,
 .today_content .time_content .wind_info .icon {
-    width: 45px;
-    height: 45px;
+    width: 30%;
     text-align: center;
     align-content: center;
 }
@@ -411,7 +415,8 @@ main .main_wrap>* {
 .time_content>div {
     display: flex;
     align-items: center;
-    gap: var(--gap-sm);
+        justify-content: center;
+    gap: var(--gap-xs);
 }
 
 .today_label,
@@ -427,13 +432,13 @@ main .main_wrap>* {
 .notice_wrap {
     display: flex;
     align-items: center;
-    flex: 0 0 150px;
+    flex: 0 0 180px;
     gap: var(--gap-2xl);
     overflow: hidden;
 }
 
 .notice_wrap img {
-    height: 90%;
+    height: 85%;
     width: auto;
     max-width: none;
     object-fit: contain;
