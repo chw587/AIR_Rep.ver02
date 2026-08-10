@@ -25,7 +25,7 @@
     --fs-xl: 1.5vw;
     --fs-2xl: 2.5vw;
     --fs-3xl: 3.5vw;
-        --fs-4xl: 4.5vw;
+    --fs-4xl: 4.5vw;
     --fs-header: 1.5vw;
     --fs-icon: clamp(24px, 2.5vw, 40px);
 
@@ -113,7 +113,7 @@ body {
 }
 
 .content_info .fas {
-        color: #2196F3;
+    color: #2196F3;
 }
 
 
@@ -200,7 +200,7 @@ main .main_wrap>* {
     align-items: center;
     justify-content: space-between;
     padding: 0 var(--gap-xl);
-        padding-top: 10px;
+    padding-top: 10px;
 }
 
 .airport_card {
@@ -267,7 +267,7 @@ main .main_wrap>* {
 }
 
 /* warning */
-.warning {
+.content_header .warning {
     display: inline-flex;
     align-items: center;
     gap: var(--gap-sm);
@@ -313,7 +313,7 @@ main .main_wrap>* {
 }
 
 .temp_value h1 span {
-    font-size: var(--fs-xl);
+    font-size: var(--fs-2xl);
     font-weight: bold;
 }
 
@@ -358,7 +358,7 @@ main .main_wrap>* {
     justify-content: center;
     height: 100%;
     padding: 10px 0;
-    gap: var(--gap-lg);
+    gap: var(--gap-sm);
     border-right: 1px solid var(--link);
 }
 
@@ -381,20 +381,39 @@ main .main_wrap>* {
     padding: 2px 6px;
     font-size: var(--fs-sm);
     color: var(--white);
-    background-color: var(--green);
     border-radius: var(--radius-sm);
     margin-left: 5px;
+}
+
+.today_label span.success {
+    background-color: var(--green);
+}
+
+.today_label span.red {
+    background-color: var(--red);
 }
 
 .today_content .now_content>div>.fas {
     font-size: 32px !important;
 }
 
-.today_content .time_content .temp_info img,
-.today_content .time_content .wind_info .icon {
+.time_content > div {
+    flex : 1;
+}
+
+.time_content > div > span {
+    width: 60%;
+}
+
+/* .today_content .time_content .temp_info img, */
+.today_content .time_content .icon {
     width: 30%;
     text-align: center;
     align-content: center;
+}
+
+.today_content .time_content .temp_info img {
+    width: 100%;
 }
 
 .today_content .time_wrap {
@@ -415,7 +434,7 @@ main .main_wrap>* {
 .time_content>div {
     display: flex;
     align-items: center;
-        justify-content: center;
+    justify-content: center;
     gap: var(--gap-xs);
 }
 
@@ -432,7 +451,7 @@ main .main_wrap>* {
 .notice_wrap {
     display: flex;
     align-items: center;
-    flex: 0 0 180px;
+    flex: 0 0 150px;
     gap: var(--gap-2xl);
     overflow: hidden;
 }
@@ -459,9 +478,11 @@ main .main_wrap>* {
 .notice_text.warning {
     background-color: #FFF4E5;
     border: 2px solid #E07D00;
+    color: #963000;
 }
 
 .notice_text.danger {
     background-color: #FFE9E9;
     border: 2px solid #D32F2F;
+    color: #4e0306;
 }
