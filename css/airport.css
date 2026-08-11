@@ -500,4 +500,5 @@ main .main_wrap>* {
 
 .source p {
     font-size: var(--fs-sm);
+    color: #767676;
 }
