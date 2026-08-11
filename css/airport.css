@@ -486,3 +486,18 @@ main .main_wrap>* {
     border: 2px solid #D32F2F;
     color: #4e0306;
 }
+
+
+.port_wrap {
+    position: relative;
+}
+
+.source {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.source p {
+    font-size: var(--fs-sm);
+}
